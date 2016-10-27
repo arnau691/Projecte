@@ -24,7 +24,7 @@ public class Projecte {
         int datanaixement = 0, pes = 0, num_pilot = 0;
         double minut_per_volta = 0.0;
         char codi_pilot = ' ';
-        boolean acciden_pilot = false;
+        boolean acciden_pilot = false, omplit= false;
 
         int opcio = 0;
 
