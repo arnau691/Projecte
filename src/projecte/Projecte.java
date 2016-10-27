@@ -42,10 +42,37 @@ public class Projecte {
                 case 0:
                     System.out.println("Sortir");
                     break;
-
-                case 1:
+                case 1:                
                     System.out.println("Afegir");
+                    if (!omplit) { //omplit==false
+                        System.out.println("Posa el nom del pilot");
+                        nom_pilot = entrada.next();
+                        
+                        System.out.println("Posa la escuderia");
+                        escuderia = entrada.next();
+                       
+                        System.out.println("Posa data de naixement");
+                        datanaixement = entrada.nextInt();
+                       
+                        System.out.println("Posa el pes del pilot");
+                        pes = entrada.nextInt();
+                       
+                        System.out.println("Posa el numero del pilot");
+                        num_pilot = entrada.nextInt();
+                        
+                        System.out.println("Posa el minut de la volta");
+                        minut_per_volta = entrada.nextDouble();
+                    
+                        System.out.println("Introduix el codi del pilot");
+                        codi_pilot = entrada.next().charAt(0);
+                        
+                        System.out.println("A tingut algun acciden?");
+                        acciden_pilot = entrada.nextBoolean();  
+                        
+                    }    
                     break;
+                    
+                
                 case 2:
                     System.out.println("Borrar");
                     break;
