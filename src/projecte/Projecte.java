@@ -69,8 +69,8 @@ public class Projecte {
                         System.out.println("A tingut algun acciden?");
                         acciden_pilot = entrada.nextBoolean();
                         omplit = true;
-                    } else  {
-                            System.out.println("Has introduit les dades correctes");
+                    } else {
+                        System.out.println("Has introduit les dades correctes");
                     }
                     break;
 
@@ -104,7 +104,7 @@ public class Projecte {
 
                             }
                         } while (mirar != 'N');
-                        System.out.println("Vols borrar el pilot S/N?");
+                        System.out.println("Vols borrar el pilot S o N?");
                         mirar = entrada.next().charAt(0);
                         switch (mirar) {
                             case 'S':
@@ -126,7 +126,7 @@ public class Projecte {
                                 break;
                             default:
                                 System.out.println("La opcio no es valida");
-                                System.out.println("Vols eliminar les dades S/N?");
+                                System.out.println("Vols eliminar les dades S o N?");
                                 mirar = entrada.next().charAt(0);
                                 break;
                         }
@@ -139,10 +139,23 @@ public class Projecte {
                 case 3:
                     System.out.println("Modificar");
                     break;
+
                 case 4:
                     System.out.println("Llistar");
+                    if (omplit == false) {
+                        System.out.println("No hi han dades");
+                    } else {
+                        System.out.println("Nom:" + nom_pilot);
+                        System.out.println("Escuderia:" + escuderia);
+                        System.out.println("Data de naixement:" + datanaixement);
+                        System.out.println("Pes:" + pes);
+                        System.out.println("Numero del pilot:" + num_pilot);
+                        System.out.println("Minut per volta:" + minut_per_volta);
+                        System.out.println("Codi del pilot:" + codi_pilot);
+                        System.out.println("Acciden:" + acciden_pilot);
+                    }
                     break;
-                default:
+                    default:
                     System.out.println("Posa una opcio correcta");
 
             }
